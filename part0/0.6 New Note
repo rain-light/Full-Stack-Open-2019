@@ -1,0 +1,18 @@
+note over browser:
+at this moment user has submitted the
+content of the form which has not a
+HTTP method attribute but a JS event
+handler. Then it will think to send
+the manipulated data (JSON in this
+case) to the server according to its
+algorithm
+end note
+
+browser->server: HTTP POST https://fullstack-exampleapp.herokuapp.com/new_note_spa
+note over server:
+at this moment server received  data
+elaborated by the client side JS, so
+it will proceed to add the data to
+the page and send a success response
+end note
+server-->browser: HTTP 201 CREATED and RESPONSE {"message":"note created"}
