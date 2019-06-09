@@ -21,6 +21,12 @@ const App = () => {
   )
 }
 
+/** Actually, I had completed both 1.1 and 1.2 without knowing.
+ * Making the "Content" component a smaller one which rendered
+ * every part on its own appeared the most reasonabole choice
+ * to me. This comment is for a second commit.
+ */
+
 const Header = (props) => (
     <>
         <h1>{props.heading}</h1>
